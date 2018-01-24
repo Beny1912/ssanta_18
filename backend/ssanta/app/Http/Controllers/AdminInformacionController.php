@@ -41,7 +41,7 @@
 			$this->col[] = ["label"=>"Capataces","name"=>"capataces"];
 			$this->col[] = ["label"=>"Costaleros","name"=>"costaleros"];
 			$this->col[] = ["label"=>"Lugares","name"=>"lugares"];
-			$this->col[] = ["label"=>"Hermandad","name"=>"id_hermandad","join"=>"hermandades,id"];
+			$this->col[] = ["label"=>"Hermandad","name"=>"id_hermandad","join"=>"hermandades,nombre"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
@@ -57,7 +57,7 @@
 			$this->form[] = ['label'=>'Capataces','name'=>'capataces','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Costaleros','name'=>'costaleros','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Lugares','name'=>'lugares','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Hermandad','name'=>'id_hermandad','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'hermandades,id'];
+			$this->form[] = ['label'=>'Hermandad','name'=>'id_hermandad','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'hermandades,nombre'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
