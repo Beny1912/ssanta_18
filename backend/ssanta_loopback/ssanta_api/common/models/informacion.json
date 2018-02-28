@@ -1,0 +1,51 @@
+{
+  "name": "informacion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "descripcion": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "string"
+    },
+    "web": {
+      "type": "string"
+    },
+    "pasos": {
+      "type": "string"
+    },
+    "nazarenos": {
+      "type": "string"
+    },
+    "musica": {
+      "type": "string"
+    },
+    "estreno": {
+      "type": "string"
+    },
+    "capataces": {
+      "type": "string"
+    },
+    "costaleros": {
+      "type": "string"
+    },
+    "lugares": {
+      "type": "string"
+    },
+    "id_hermandad": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "mapa",
+  "plural": "mapas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "id_dia": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

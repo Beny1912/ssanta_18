@@ -1,0 +1,23 @@
+{
+  "name": "recorrido",
+  "plural": "recorridos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_hermandad": {
+      "type": "string",
+      "required": true
+    },
+    "recorrido": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

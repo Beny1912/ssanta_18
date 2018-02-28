@@ -1,0 +1,27 @@
+{
+  "name": "hermandad",
+  "plural": "hermandades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "id_ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "id_dia": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "agradecimiento": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "ciudad": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "dia": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "informacion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "instagram": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "mapa": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "oficio": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "pdf": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "recorrido": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "twitter": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "hermandad": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}
