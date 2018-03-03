@@ -19,6 +19,7 @@ import { ConstantsProvider } from '../providers/constants/constants';
 import { HermandadProvider } from '../providers/hermandad/hermandad';
 import { InformacionProvider } from '../providers/informacion/informacion';
 import { RecorridoProvider } from '../providers/recorrido/recorrido';
+import { RutaProvider } from '../providers/ruta/ruta';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -76,7 +77,8 @@ export function provideSettings(storage: Storage) {
     ConstantsProvider,
     HermandadProvider,
     InformacionProvider,
-    RecorridoProvider
+    RecorridoProvider,
+    RutaProvider
   ]
 })
 export class AppModule { }

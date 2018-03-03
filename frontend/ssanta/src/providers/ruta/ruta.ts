@@ -4,33 +4,33 @@ import 'rxjs/add/operator/map';
 import { Api } from './../api/api';
 import * as Constants from './../constants/constants';
 
-
 /*
-  Generated class for the DiaProvider provider.
+  Generated class for the RutaProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
 @Injectable()
-export class DiaProvider {
+export class RutaProvider {
     id_ciudad:any
     where:any
     filter:any;
-  constructor(public http: HttpClient,public api: Api) {
-    console.log('Hello DiaProvider Provider');
-  }
+    params:any;
 
-getDias() {
-    this.filter=Constants.FILTER;
+  constructor(public http: HttpClient, public api: Api) {
+    console.log('Hello RutaProvider Provider');
+  }
+  getRuta(id_hermandad){
+      this.filter=Constants.FILTER;
     this.id_ciudad = Constants.API_CIUDAD_ID;
-    this.where = JSON.stringify({"where":{"id_ciudad": {"like":this.id_ciudad}}});
-    
+    this.params = JSON.stringify({'where':{'id_hermandad':{"like":id_hermandad}}});
     return new Promise(resolve => {
-      this.api.get('dias'+this.filter+this.where).subscribe(data => {
+        this.api.get('recorridos' + this.filter + this.params).subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);
       });
     });
   }
+
 }
